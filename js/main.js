@@ -206,10 +206,20 @@
 
 
         var skill = jQuery('.skills');
+        var prog60 = $('.prog-60');
         var prog80 = $('.prog-80');
         var prog90 = $('.prog-90');
         var prog86 = $('.prog-86');
         var prog94 = $('.prog-94');
+        skill.waypoint(function() {
+
+            prog60.css({
+                "width": "60%",
+                "transition": "2s ease-in"
+            });
+        }, {
+            offset: '60%'
+        });
         skill.waypoint(function() {
 
             prog80.css({
